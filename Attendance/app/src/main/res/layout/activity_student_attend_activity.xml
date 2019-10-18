@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_attend_activity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    >
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/grey"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khwopa College of Engineering"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dept. of Computer Engineering"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject: "
+        android:id="@+id/coursetitle"
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester: I (2017 Batch)"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+    <TextView
+        android:id="@+id/teachername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher: "
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+
+    <TextView
+
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment_blue_round"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        >
+
+    </TextView>
+
+
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:background="@color/lightgrey"
+    >
+    <TextView
+        android:paddingStart="10dp"
+        android:text="Student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+
+        />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:textAlignment="center"
+        android:text=" "
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/ic_assignment_ind_white_24dp"
+
+        android:textAlignment="center"
+        android:id="@+id/checkbox"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/ic_assignment_late_white_24dp"
+
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/studentrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/ic_save_black_24dp"
+        app:layout_anchor="@id/studentrecycleview"
+        app:layout_anchorGravity="bottom|center"
+        android:layout_margin="16dp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateSelectorActivity"
+    android:orientation="vertical"
+
+    android:background="@color/lightgrey"
+
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightgrey"
+
+
+        >
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            >
+
+        </DatePicker>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_blue_round"
+            android:orientation="vertical"
+            >
+
+
+    <TextView
+        android:id="@+id/editdte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="NOs of period"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dept. of Computer Engineering"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject: "
+        android:id="@+id/title1"
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester: I (2017 Batch)"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+    <TextView
+        android:id="@+id/datepick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <Button
+        android:id="@+id/gotostudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_gravity="center"
+        android:background="@drawable/small_button"
+
+
+        />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
